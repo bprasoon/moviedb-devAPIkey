@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+ <listener class-name="com.resources.Listeners"></listener>
+ <listener class-name="com.resources.ExtentReporter"></listener>
+</listeners>
+<test name="To check the presense of Developer APIKey">
+    <classes>
+      <class name="com.apikey.APIkeypresenseTest"/>
+    </classes>
+</test>
+<test name="To test the dashboard functionality"> 
+   <classes>
+      <class name="com.apikey.DashboardTest"/>
+   </classes>
+</test>
+<test name="To check the navigation to the Discover movies and tv shows tab and click on one of the movie"> 
+   <classes>
+      <class name="com.apikey.DiscoverlinkTest"/>
+    </classes>
+     </test>
+ <test name="To check the Notifications settings funtionality"> 
+   <classes>
+      <class name="com.apikey.NotificationssettingsTest"/>
+   </classes>
+</test> 
+   <!-- Test -->
+</suite> <!-- Suite -->
